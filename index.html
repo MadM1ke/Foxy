@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="img/logo002.png" type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css?v=9.0" />
+		<link rel="stylesheet" href="css/media.css?v=9.0" />
+		<title>FOXY&nbsp;&mdash; Beauty Studio</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-bg">
+				<div class="container">
+					<div class="header__wrapper">
+						<a class="header__link-logo" href="#">
+							<img
+								class="header__logo"
+								src="img/logo001.svg"
+								alt="Logo"
+							/>
+						</a>
+						<div class="header__content">
+							<div class="header__nav-wrap">
+								<nav class="nav header__nav">
+									<img
+										class="header__burger-logo-img"
+										src="img/logo001.svg"
+										alt=""
+									/>
+									<ul class="list-reset header__nav-list">
+										<li class="header__nav-item">
+											<a class="header__nav-link" href="#about">
+												О&nbsp;нас
+											</a>
+										</li>
+										<li class="header__nav-item">
+											<a class="header__nav-link" href="#services">
+												Наши услуги
+											</a>
+										</li>
+										<li class="header__nav-item">
+											<a class="header__nav-link" href="#contacts">
+												Контакты
+											</a>
+										</li>
+										<li class="header__nav-item">
+											<a class="header__nav-link" href="#call-back">
+												Отзывы
+											</a>
+										</li>
+									</ul>
+									<div class="header__burger-contacts">
+										<a
+											class="header__burger-contacts-link footer__contacts-link-hover"
+											href="tel:+79685871931"
+											target="_blank"
+										>
+											+7&nbsp;968&nbsp;587 19&nbsp;31
+										</a>
+										<div class="header__burger-contacts-social">
+											<a
+												class="header__burger-contacts-link"
+												href="https://api.whatsapp.com/send/?phone=79685871931"
+												target="_blank"
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													aria-label="WhatsApp"
+													role="img"
+													viewBox="0 0 512 512"
+												>
+													<rect
+														width="512"
+														height="512"
+														rx="15%"
+														fill="#25d366"
+													/>
+													<path
+														fill="#25d366"
+														stroke="#ffffff"
+														stroke-width="26"
+														d="M123 393l14-65a138 138 0 1150 47z"
+													/>
+													<path
+														fill="#ffffff"
+														d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
+													/>
+												</svg>
+											</a>
+											<a
+												class="header__burger-contacts-link"
+												href="#"
+												target="_blank"
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													aria-label="Telegram"
+													role="img"
+													viewBox="0 0 512 512"
+												>
+													<rect
+														width="512"
+														height="512"
+														rx="15%"
+														fill="#37aee2"
+													/>
+													<path
+														fill="#c8daea"
+														d="M199 404c-11 0-10-4-13-14l-32-105 245-144"
+													/>
+													<path
+														fill="#a9c9dd"
+														d="M199 404c7 0 11-4 16-8l45-43-56-34"
+													/>
+													<path
+														fill="#f6fbfe"
+														d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"
+													/>
+												</svg>
+											</a>
+										</div>
+									</div>
+									<div class="header__burger-links-all"></div>
+									<a
+										class="header__burger-links-btn"
+										href=""
+										target="_blank"
+									>
+										Записаться
+									</a>
+								</nav>
+								<button class="btn-reset burger" tabindex="-1">
+									<span class="burger__line"></span>
+									<span class="burger__line"></span>
+									<span class="burger__line"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero-bg" id="hero-bg">
+					<div class="container">
+						<div class="hero__wrapper">
+							<h1 class="hero__title">
+								Индивидульный подход к&nbsp;каждому клиенту
+							</h1>
+							<div class="hero__links">
+								<a class="hero__link" href="" target="_blank">
+									Записаться
+								</a>
+								<a
+									class="hero__link"
+									href="tel:+79685871931"
+									target="_blank"
+								>
+									Позвонить
+								</a>
+								<a
+									class="hero__link"
+									href="https://api.whatsapp.com/send/?phone=79685871931"
+									target="_blank"
+								>
+									Написать в&nbsp;WhatsApp
+								</a>
+							</div>
+							<div class="modal" id="modal-window-stock">
+								<div class="modal__wrapper"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services" id="services">
+				<div class="container">
+					<div class="services__wrapper">
+						<h2 class="services__subtitle-stocke">
+							Сложное окрашивание от&nbsp;6000₽
+						</h3>
+						<ul class="list-reset services__list">
+							<li class="services__item">
+								<a class="services__link" href="#price">
+									<div class="services__link-info">
+										<p class="services__link-desc">Окрашивание</p>
+										<p class="services__link-desc">от&nbsp;2500₽</p>
+									</div>
+								</a>
+							</li>
+							<li class="services__item">
+								<a class="services__link" href="#price">
+									<div class="services__link-info">
+										<p class="services__link-desc">Стрижки</p>
+										<p class="services__link-desc">от&nbsp;500₽</p>
+									</div>
+								</a>
+							</li>
+							<li class="services__item">
+								<a class="services__link" href="#price">
+									<div class="services__link-info">
+										<p class="services__link-desc">Уход</p>
+										<p class="services__link-desc">от&nbsp;2000₽</p>
+									</div>
+								</a>
+							</li>
+							<li class="services__item">
+								<a class="services__link" href="#price">
+									<div class="services__link-info">
+										<p class="services__link-desc">Маникюр</p>
+										<p class="services__link-desc">от&nbsp;800₽</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="about" id="about">
+				<div class="container">
+					<div class="about__wrapper">
+						<div class="about__preview">
+							<h2 class="about__title">Foxy Beauty Studio</h2>
+							<p class="about__desc">
+								Это команда стилистов-колористов.
+							</p>
+							<p class="about__desc about__desc-all">
+								Мы&nbsp;знаем, как создать идеальный цвет без вреда для
+								волос. Работаем с&nbsp;премиальным итальянским брендом
+								<strong>Framesi</strong>. В&nbsp;сложных техниках
+								окрашивания используется защита
+								<strong>Olaplex</strong>.
+							</p>
+						</div>
+						<ul class="about__list">
+							<li class="about__item">
+								<div class="about__item-content">
+									<img
+										class="about__item-img"
+										src="img/about001.jpg"
+										alt="About Image 01"
+									/>
+									<img
+										class="about__img-cube"
+										src="img/cube-icon001.svg"
+										alt=""
+									/>
+									<p class="about__item-desc">
+										Наши окрашивания носятся до года, благодаря
+										современным техникам, таким как Shatush, Balayage,
+										airtouch, ombre
+									</p>
+								</div>
+							</li>
+							<li class="about__item">
+								<div class="about__item-content">
+									<p class="about__item-desc">
+										Комуфляж седины позволяет значительно реже
+										подкрашивать корни
+									</p>
+									<img
+										class="about__item-img"
+										src="img/about002.jpg"
+										alt="About Image 02"
+									/>
+									<img
+										class="about__img-cube"
+										src="img/cube-icon001.svg"
+										alt=""
+									/>
+								</div>
+							</li>
+							<li class="about__item">
+								<div class="about__item-content">
+									<img
+										class="about__item-img"
+										src="img/about003.jpg"
+										alt="About Image 03"
+									/>
+									<img
+										class="about__img-cube"
+										src="img/cube-icon001.svg"
+										alt=""
+									/>
+									<p class="about__item-desc">
+										Естественный блонд или же оживим темные волосы при
+										помощи легких бликов
+									</p>
+								</div>
+							</li>
+							<li class="about__item">
+								<div class="about__item-content">
+									<p class="about__item-desc">
+										А умная стрижка завершит образ и подчеркнет Вашу
+										индивидуальность
+									</p>
+									<img
+										class="about__item-img"
+										src="img/about004.jpg"
+										alt="About Image 04"
+									/>
+									<img
+										class="about__img-cube"
+										src="img/cube-icon001.svg"
+										alt=""
+									/>
+								</div>
+							</li>
+						</ul>
+						<img
+							class="about__pic-img-top"
+							src="img/pic-img001.svg"
+							alt="Pictures 01"
+						/>
+						<img
+							class="about__pic-img-bottom"
+							src="img/pic-img002.svg"
+							alt="Pictures 02"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="price" id="price">
+				<div class="container">
+					<div class="price__wrapper">
+						<div class="price__content">
+							<h2 class="price__title">Услуги и&nbsp;цены</h2>
+							<ul class="list-reset accordion price__list">
+								<li class="price__item" id="coloing">
+									<h3 class="price__subtitle">Окрашивание</h3>
+									<div class="price__content">
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Окрашивание в&nbsp;один тон
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-длинна до&nbsp;плеч 3000₽
+												</p>
+												<p class="price__content-info-desc">
+													-длинна до&nbsp;лопаток 3500-4000₽
+												</p>
+												<p class="price__content-info-desc">
+													-длинна ниже лопаток 4500-5000₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Окрашивание корней
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-2500₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Сложное окрашивание (осветление
+												в&nbsp;технике + тонирование + защита
+												Delitex)
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-длинна до&nbsp;плеч 5000-6000₽
+												</p>
+												<p class="price__content-info-desc">
+													-длинна до&nbsp;лопаток 8000-9000₽
+												</p>
+												<p class="price__content-info-desc">
+													-длинна ниже лопаток 10000₽
+												</p>
+												<p class="price__content-info-desc">
+													-длинна более 60&nbsp;см 12000₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Тотал блонд (обесцвечивание корней+
+												тонирование + защита Delitex)
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-длинна до&nbsp;плеч 5000₽
+												</p>
+												<p class="price__content-info-desc">
+													-длинна до&nbsp;лопаток 8000₽
+												</p>
+												<p class="price__content-info-desc">
+													-длинна ниже лопаток 9000₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Контуринг (осветление в&nbsp;технике видной
+												зоны у&nbsp;лица+тонирование)
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-4000-5000₽
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="price__item" id="haircut">
+									<h3 class="price__subtitle">Стрижка</h3>
+									<div class="price__content">
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Стрижка женская
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-длинна до&nbsp;плеч 1500₽
+												</p>
+												<p class="price__content-info-desc">
+													-длинна до&nbsp;лопаток 1700₽
+												</p>
+												<p class="price__content-info-desc">
+													-длинна ниже лопаток 2000₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Стрижка мужская
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-1200₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Стрижка горячими ножницами
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-2500₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Одним срезом
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-1000₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">Чёлка</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-500₽
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="price__item" id="care">
+									<h3 class="price__subtitle">Уход</h3>
+									<div class="price__content">
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Коллагеновое восстановление
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-2000-3000₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												SOS восстановление
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-2000-3000₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Ламинирование волос
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-2000-3000₽
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="price__item" id="manicure">
+									<h3 class="price__subtitle">Маникюр</h3>
+									<div class="price__content">
+										<div class="price__preview price__preview-news">
+											<p
+												class="price__content-subtitle price__content-subtitle-news"
+											>
+												Наш мастер немножко потерялся&nbsp;&#128522;
+											</p>
+											<p
+												class="price__content-subtitle price__content-subtitle-news"
+											>
+												Но как только он&nbsp;найдётся, мы&nbsp;Вам
+												скажем!
+											</p>
+										</div>
+										<!-- <div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Маникюр
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-800₽
+												</p>
+											</div>
+										</div>
+										<div class="price__preview">
+											<h4 class="price__content-subtitle">
+												Маникюр с&nbsp;покрытием гель-лак
+											</h4>
+											<div class="price__content-info">
+												<p class="price__content-info-desc">
+													-2000₽
+												</p>
+											</div>
+										</div> -->
+									</div>
+								</li>
+							</ul>
+						</div>
+						<img
+							class="price__pic-img"
+							src="img/pic-img004.svg"
+							alt="Pic-Img"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="portfolio">
+				<div class="container">
+					<div class="portfolio__wrapper">
+						<h2 class="portfolio__title">Наши работы</h2>
+						<div class="portfolio__content">
+							<img
+								class="portfolio__img"
+								src="img/portfolio001.jpg"
+								alt="Porfplio01"
+							/>
+							<img
+								class="portfolio__img"
+								src="img/portfolio002.jpg"
+								alt="Porfplio02"
+							/>
+							<img
+								class="portfolio__img"
+								src="img/portfolio003.jpg"
+								alt="Porfplio03"
+							/>
+							<img
+								class="portfolio__img"
+								src="img/portfolio004.jpg"
+								alt="Porfplio04"
+							/>
+							<img
+								class="portfolio__img"
+								src="img/portfolio005.jpg"
+								alt="Porfplio05"
+							/>
+							<img
+								class="portfolio__img"
+								src="img/portfolio006.jpg"
+								alt="Porfplio06"
+							/>
+							<img
+								class="portfolio__img"
+								src="img/portfolio007.jpg"
+								alt="Porfplio07"
+							/>
+							<img
+								class="portfolio__img"
+								src="img/portfolio008.jpg"
+								alt="Porfplio07"
+							/>
+						</div>
+						<img
+							class="portfolio__pic-img"
+							src="img/pic-img003.svg"
+							alt="Pic-Img"
+						/>
+						<a class="portfolio__link-all" href="portfolio-all.html">
+							Смотреть все работы
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="map" id="contacts">
+				<div class="map-yandex" id="mapYandex"></div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-bg">
+				<div class="container">
+					<div class="footer__wrapper">
+						<nav class="nav footer__nav">
+							<ul class="list-reset footer__nav-list">
+								<li class="footer__nav-item">
+									<a class="footer__nav-link" href="#about">
+										О&nbsp;нас
+									</a>
+								</li>
+								<li class="footer__nav-item">
+									<a class="footer__nav-link" href="#services">
+										Наши услуги
+									</a>
+								</li>
+								<li class="footer__nav-item">
+									<a class="footer__nav-link" href="#contacts">
+										Контакты
+									</a>
+								</li>
+								<li class="footer__nav-item">
+									<a class="footer__nav-link" href="#call-back">
+										Отзывы
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<a class="footer__link-logo" href="index.html">
+							<img
+								class="footer__logo"
+								src="img/logo001.svg"
+								alt="Logo"
+							/>
+						</a>
+						<div class="footer__content">
+							<div class="footer__contacts">
+								<a
+									class="footer__contacts-link footer__contacts-link-hover"
+									href="tel:+79685871931"
+									target="_blank"
+								>
+									+7&nbsp;968&nbsp;587 19&nbsp;31
+								</a>
+								<a
+									class="footer__contacts-link"
+									href="https://api.whatsapp.com/send/?phone=79685871931"
+									target="_blank"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										aria-label="WhatsApp"
+										role="img"
+										viewBox="0 0 512 512"
+									>
+										<rect
+											width="512"
+											height="512"
+											rx="15%"
+											fill="#25d366"
+										/>
+										<path
+											fill="#25d366"
+											stroke="#ffffff"
+											stroke-width="26"
+											d="M123 393l14-65a138 138 0 1150 47z"
+										/>
+										<path
+											fill="#ffffff"
+											d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
+										/>
+									</svg>
+								</a>
+								<a
+									class="footer__contacts-link"
+									href="#"
+									target="_blank"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										aria-label="Telegram"
+										role="img"
+										viewBox="0 0 512 512"
+									>
+										<rect
+											width="512"
+											height="512"
+											rx="15%"
+											fill="#37aee2"
+										/>
+										<path
+											fill="#c8daea"
+											d="M199 404c-11 0-10-4-13-14l-32-105 245-144"
+										/>
+										<path
+											fill="#a9c9dd"
+											d="M199 404c7 0 11-4 16-8l45-43-56-34"
+										/>
+										<path
+											fill="#f6fbfe"
+											d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"
+										/>
+									</svg>
+								</a>
+							</div>
+							<address class="footer__address">
+								Москва, Гостиничный проезд, 8к1
+							</address>
+							<div class="footer__social-network">
+								<a
+									class="footer__social-network-link"
+									href="Social Network 01"
+									target="_blank"
+								>
+									<svg
+										width="33"
+										height="33"
+										viewBox="0 0 33 33"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g clip-path="url(#clip0_15_43208)">
+											<path
+												d="M17.1923 32.7309C16.6775 32.7309 16.2837 32.3068 16.2837 31.8223C16.2837 31.5497 16.2837 25.5832 16.2837 20.5254C16.2837 20.0105 16.6775 19.6168 17.1923 19.6168H19.5547L19.7667 17.4361H17.1923C16.6775 17.4361 16.2837 17.0424 16.2837 16.5275V14.1652C16.2837 12.8023 17.2832 12.1663 18.1918 12.1663H19.8273V10.0765H17.2529C13.7699 10.0765 13.4065 12.772 13.4065 13.9229V16.5275C13.4065 17.0424 13.0128 17.4361 12.4979 17.4361H10.4081V19.6168H12.4979C13.0128 19.6168 13.4065 20.0105 13.4065 20.5254V31.4588C13.4065 31.9737 13.0128 32.3674 12.4979 32.3674C11.983 32.3674 11.5893 31.9737 11.5893 31.4588V21.434H9.49954C8.98467 21.434 8.59094 21.0402 8.59094 20.5254V16.4972C8.59094 15.9824 8.98467 15.5886 9.49954 15.5886H11.5893V13.8926C11.5893 11.288 13.0734 8.229 17.2529 8.229H20.7359C21.2507 8.229 21.6445 8.62273 21.6445 9.1376V13.0749C21.6445 13.5897 21.2507 13.9835 20.7359 13.9835H18.1918C18.1615 13.9835 18.1312 13.9835 18.1312 13.9835C18.1312 14.0137 18.1009 14.0743 18.1009 14.1652V15.6189H20.7964C21.0387 15.6189 21.3113 15.7401 21.4627 15.9218C21.6445 16.1035 21.705 16.3761 21.705 16.6184L21.281 20.6162C21.2205 21.0705 20.857 21.434 20.3724 21.434H18.1009C18.1009 23.766 18.1009 26.189 18.1009 28.1273V31.58C18.1009 31.6405 18.1009 31.7011 18.1009 31.7617C18.1009 31.792 18.1009 31.8223 18.1009 31.8525C18.0101 32.5794 17.5558 32.7309 17.1923 32.7309Z"
+											/>
+											<path
+												d="M17.1923 32.7312C16.7077 32.7312 16.314 32.3678 16.2837 31.8832C16.2534 31.3683 16.6168 30.9443 17.1317 30.914C24.5216 30.3688 30.2761 24.1298 30.2761 16.7096C30.2761 8.86537 23.8856 2.4749 16.0414 2.4749C8.19717 2.4749 1.8067 8.86537 1.8067 16.7096C1.8067 23.3121 6.28911 29.006 12.6796 30.5506C13.1642 30.6717 13.467 31.1563 13.3459 31.6409C13.2247 32.1255 12.7402 32.4283 12.2556 32.3072C5.04736 30.5809 -0.010498 24.1601 -0.010498 16.7399C-0.010498 7.8962 7.19771 0.687988 16.0414 0.687988C24.8851 0.687988 32.0933 7.8962 32.0933 16.7399C32.0933 25.099 25.5817 32.1255 17.2529 32.7312C17.2226 32.7312 17.2226 32.7312 17.1923 32.7312Z"
+											/>
+										</g>
+										<defs>
+											<clipPath id="clip0_15_43208">
+												<rect
+													width="32.0829"
+													height="32.0829"
+													transform="translate(0 0.667969)"
+												/>
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a
+									class="footer__social-network-link"
+									href="https://instagram.com/alenapahnina?igshid=MjEwN2IyYWYwYw=="
+									target="_blank"
+								>
+									<svg
+										width="36"
+										height="36"
+										viewBox="0 0 36 36"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g clip-path="url(#clip0_15_43199)">
+											<path
+												d="M35.3912 17.7817C35.3912 20.1895 35.3428 22.6042 35.4051 25.012C35.5089 29.274 32.8312 32.5675 29.4202 34.0343C28.0503 34.6224 26.6111 34.9337 25.1236 34.9337C20.4671 34.9406 15.8038 35.0029 11.1474 34.913C7.63946 34.8438 4.75427 33.377 2.68551 30.4849C1.59924 28.9627 1.08032 27.233 1.08032 25.3579C1.08032 20.3971 1.08032 15.4431 1.08032 10.4823C1.08032 6.4347 3.05221 3.60486 6.55319 1.76443C8.07535 0.968752 9.72897 0.629725 11.4518 0.622806C15.9698 0.622806 20.4948 0.595131 25.0129 0.636644C28.5208 0.66432 31.4475 2.00659 33.6062 4.82951C34.8101 6.40702 35.3912 8.21978 35.3912 10.2124C35.3912 12.7309 35.3912 15.2563 35.3912 17.7817ZM3.6334 17.7817C3.6334 20.321 3.6334 22.8533 3.6334 25.3925C3.6334 26.5272 3.89632 27.5928 4.48443 28.5545C6.02735 31.0799 8.35903 32.3115 11.2511 32.3599C15.8937 32.4291 20.5432 32.3876 25.1928 32.3737C26.3344 32.3737 27.4414 32.1385 28.4723 31.6472C31.2814 30.305 32.852 28.167 32.8382 24.9566C32.8105 20.0442 32.8312 15.1318 32.8312 10.2193C32.8312 8.82864 32.4369 7.55556 31.6135 6.4347C30.0222 4.28291 27.8219 3.22432 25.1928 3.19664C20.5571 3.14129 15.9214 3.17589 11.2857 3.18281C10.2963 3.18281 9.34151 3.38346 8.41438 3.7294C5.86821 4.67729 3.50194 7.07816 3.61265 10.6137C3.69567 13.0077 3.6334 15.3947 3.6334 17.7817Z"
+											/>
+											<path
+												d="M18.2739 25.1157C13.8112 25.1157 10.2133 21.5594 10.2064 17.1312C10.1995 12.7723 13.825 9.20216 18.2601 9.20216C22.7089 9.19524 26.3206 12.7585 26.3275 17.152C26.3275 21.5386 22.7228 25.1088 18.2739 25.1157ZM18.2739 22.5557C21.3113 22.5557 23.7744 20.1271 23.7675 17.1382C23.7606 14.1769 21.2975 11.7552 18.2739 11.7552C15.2365 11.7552 12.7595 14.1699 12.7595 17.152C12.7664 20.141 15.2365 22.5626 18.2739 22.5557Z"
+											/>
+											<path
+												d="M27.2615 6.78076C28.1956 6.78076 28.9566 7.57644 28.9566 8.55201C28.9497 9.52757 28.1817 10.3163 27.2477 10.3094C26.3275 10.3025 25.5733 9.51373 25.5733 8.55892C25.5664 7.58336 26.3275 6.78076 27.2615 6.78076Z"
+											/>
+										</g>
+										<defs>
+											<clipPath id="clip0_15_43199">
+												<rect
+													width="35.4249"
+													height="35.4249"
+													transform="translate(0.450684)"
+												/>
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a
+									class="footer__social-network-link"
+									href="Social Network 03"
+									target="_blank"
+								>
+									<svg
+										width="35"
+										height="36"
+										viewBox="0 0 35 36"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g clip-path="url(#clip0_15_43205)">
+											<path
+												d="M34.8158 26.0401C34.7737 25.9494 34.7344 25.8742 34.698 25.8139C34.095 24.7279 32.9426 23.3948 31.2416 21.8143L31.2057 21.7782L31.1877 21.7604L31.1695 21.7422H31.1512C30.3792 21.0063 29.8903 20.5114 29.6856 20.2581C29.311 19.7755 29.2271 19.287 29.4318 18.7921C29.5765 18.4181 30.1198 17.6284 31.0605 16.4217C31.5553 15.7823 31.9472 15.2698 32.2366 14.8836C34.3239 12.1087 35.2288 10.3355 34.9512 9.56333L34.8434 9.38288C34.7709 9.27424 34.584 9.17486 34.2827 9.08422C33.9808 8.99377 33.5948 8.97882 33.1242 9.03909L27.9126 9.07509C27.8282 9.04518 27.7076 9.04797 27.5506 9.08422C27.3937 9.12048 27.3152 9.13867 27.3152 9.13867L27.2245 9.18399L27.1525 9.23843C27.0922 9.27443 27.0258 9.33775 26.9534 9.42826C26.8813 9.51846 26.821 9.62431 26.7729 9.74492C26.2055 11.2047 25.5603 12.5619 24.8363 13.8165C24.3899 14.5646 23.98 15.213 23.6056 15.7619C23.2317 16.3107 22.918 16.715 22.6648 16.9742C22.4113 17.2336 22.1825 17.4414 21.977 17.5984C21.7718 17.7555 21.6152 17.8219 21.5068 17.7976C21.3981 17.7733 21.2957 17.7492 21.1988 17.7251C21.03 17.6165 20.8942 17.4688 20.7919 17.2818C20.6891 17.0948 20.6198 16.8595 20.5836 16.5759C20.5476 16.2922 20.5264 16.0482 20.5203 15.843C20.5146 15.6381 20.5172 15.3483 20.5295 14.9743C20.542 14.6002 20.5476 14.347 20.5476 14.2143C20.5476 13.7558 20.5566 13.2582 20.5745 12.7213C20.5928 12.1845 20.6075 11.7591 20.6199 11.4457C20.6322 11.1321 20.6379 10.8002 20.6379 10.4503C20.6379 10.1004 20.6166 9.82605 20.5745 9.6269C20.5329 9.42801 20.4691 9.23495 20.385 9.04778C20.3004 8.8608 20.1765 8.71616 20.014 8.61348C19.8512 8.51092 19.6488 8.42954 19.4078 8.36907C18.7684 8.22437 17.9541 8.14609 16.9646 8.13392C14.7208 8.10984 13.279 8.25473 12.6396 8.56841C12.3863 8.70095 12.157 8.88203 11.9521 9.1111C11.7348 9.37661 11.7045 9.5215 11.8613 9.54533C12.5853 9.65378 13.0978 9.91321 13.3995 10.3234L13.5082 10.5407C13.5927 10.6975 13.6771 10.9751 13.7616 11.3732C13.846 11.7712 13.9004 12.2115 13.9244 12.6939C13.9846 13.5747 13.9846 14.3287 13.9244 14.9559C13.864 15.5834 13.8069 16.0719 13.7525 16.4218C13.6981 16.7717 13.6167 17.0552 13.5082 17.2723C13.3995 17.4894 13.3271 17.6221 13.2909 17.6703C13.2547 17.7185 13.2245 17.7488 13.2006 17.7608C13.0438 17.8208 12.8807 17.8515 12.7119 17.8515C12.5428 17.8515 12.3379 17.7669 12.0966 17.5979C11.8555 17.429 11.6052 17.1968 11.3457 16.9012C11.0863 16.6055 10.7937 16.1924 10.4679 15.6616C10.1423 15.1308 9.80445 14.5035 9.45458 13.7797L9.16511 13.2547C8.98415 12.917 8.73696 12.4253 8.42327 11.78C8.1094 11.1345 7.83198 10.51 7.5908 9.9068C7.4944 9.65346 7.34957 9.46059 7.15657 9.32787L7.06599 9.27342C7.00578 9.22525 6.90912 9.1741 6.77653 9.11959C6.64374 9.06514 6.50518 9.0261 6.36029 9.00208L1.40191 9.03808C0.895232 9.03808 0.551444 9.15286 0.370423 9.38212L0.297976 9.49057C0.261785 9.55097 0.24353 9.64744 0.24353 9.78023C0.24353 9.91295 0.279722 10.0758 0.352168 10.2687C1.076 11.9699 1.86315 13.6106 2.71362 15.191C3.56409 16.7714 4.30314 18.0444 4.93031 19.009C5.55761 19.9742 6.19702 20.8852 6.84853 21.7415C7.50004 22.5981 7.9313 23.1471 8.1423 23.3883C8.35355 23.6299 8.51949 23.8105 8.64011 23.9311L9.0926 24.3654C9.38213 24.655 9.8073 25.0018 10.3683 25.4059C10.9294 25.8102 11.5506 26.2082 12.2323 26.6006C12.914 26.9924 13.7071 27.3121 14.612 27.5594C15.5168 27.8069 16.3975 27.9062 17.2541 27.8583H19.3352C19.7573 27.8218 20.077 27.6891 20.2944 27.46L20.3664 27.3693C20.4148 27.2973 20.4601 27.1855 20.5019 27.0349C20.5443 26.8841 20.5653 26.718 20.5653 26.5373C20.553 26.0187 20.5925 25.5512 20.6827 25.135C20.7729 24.719 20.8757 24.4053 20.9907 24.1941C21.1056 23.983 21.2353 23.8049 21.3796 23.6605C21.5243 23.5158 21.6273 23.4281 21.6878 23.398C21.7479 23.3676 21.7958 23.347 21.832 23.3346C22.1216 23.2382 22.4623 23.3316 22.8548 23.6154C23.2469 23.8989 23.6147 24.2489 23.9588 24.665C24.3026 25.0814 24.7158 25.5486 25.1982 26.0673C25.681 26.5861 26.1032 26.9718 26.4649 27.2255L26.8267 27.4427C27.0683 27.5876 27.382 27.7203 27.7682 27.8409C28.1536 27.9615 28.4913 27.9916 28.7813 27.9314L33.4137 27.8591C33.8719 27.8591 34.2285 27.7832 34.4813 27.6327C34.7348 27.4819 34.8853 27.3158 34.9338 27.1351C34.9823 26.9542 34.9849 26.749 34.943 26.5195C34.9001 26.2906 34.8578 26.1306 34.8158 26.0401Z"
+											/>
+										</g>
+										<defs>
+											<clipPath id="clip0_15_43205">
+												<rect
+													width="34.7565"
+													height="34.7565"
+													transform="translate(0.24353 0.667969)"
+												/>
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+			type="text/javascript"
+		></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+		<script src="js/script.js?v=9.0"></script>
+	</body>
+</html>
